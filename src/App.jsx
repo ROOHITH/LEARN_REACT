@@ -13,6 +13,7 @@ import Hr from "./components/Hr";
 import UseReducerDemo from "./components/UseReducerDemo";
 import UseMemoAndUseCallBack from'./components/UseMemoAndUseCallBack';
 import UseEffectDemo from'./components/UseEffectDemo';
+import UseRefDemo from'./components/UseRefDemo';
 function App() {
   const [current, setCurrent] = useState(sculptureList.length > 1 ? 0 : null);
   return (
@@ -47,6 +48,8 @@ function App() {
       <UseMemoAndUseCallBack/>
       <Hr head={"Use effect"} />
       <UseEffectDemo/>
+      <Hr head={"Use Ref"} />
+      <UseRefDemo />
     </>
   );
 }
